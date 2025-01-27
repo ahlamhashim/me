@@ -1,71 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahlam Hashim's Introduction Website</title>
     <style>
         body {
             font-family: Georgia, serif;
             background-color: #f4f4f4;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        .main-info {
+        header {
             background: #333;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
+            text-align: center;
         }
-        .main-info h1 {
-            margin: 0;
+        header h1, header h2 {
+            margin: 5px;
         }
-        .hobbies, .AUS, .course, .job {
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+        section {
             background: #e7e7e7;
             padding: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: square;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="main-info">
-            <h1>Ahlam Hashim</h1>
-            <h1>Preferred Name: Ahlam</h1>
+        <!-- Header Section -->
+        <header>
+            <h1>Ahlam Hashim's Introduction Website</h1>
+            <h2>Preferred Name: Ahlam</h2>
+            <p>Email: <a href="mailto:g00093807@aus.edu">g00093807@aus.edu</a></p>
+            <p>Discord: al.fam._</p>
         </header>
 
-        <section class="AUS">
-			<h2>Year at AUS: Senior II</h2>
-			<h2>Lewis major/minor/concentrations: Computer Engineering</h2>
-			<h2>Reasons for pursuing this degree: Interest in hardware</h2>
+        <!-- Profile Image Section -->
+        <img src="me-800-by-800.jpeg" alt="Ahlam's Headshot" class="profile-image" width="200" height="200" onclick="window.open('me-300-by-300.jpeg', '_blank')">
+
+        <!-- Introduction Section -->
+        <section>
+            <h2>Introduction</h2>
+            <p>Hi, my name is Ahlam Hashim, and I’m a senior studying Computer Engineering. I’m passionate about hardware and enjoy learning about how systems operate. My family is my greatest support, and they inspire me to keep pushing forward in my studies.</p>
         </section>
 
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
-            <p>To be honest, its cause I am forced to take it. However, I am interested on what this course has to offer.</p>
+        <!-- What I Hope to Learn Section -->
+        <section>
+            <h2>What I Hope to Learn in this Course</h2>
+            <ul>
+                <li>How to design and host web pages effectively</li>
+                <li>Improving my understanding of HTML and CSS</li>
+                <li>Learning practical skills for real-world software projects</li>
+            </ul>
         </section>
 
-		<section class="job">
-            <h2>Current/Recent Job</h2>
-			<p>Resident Assistant at Dorms</p>
-        </section>		
-
-        <section class="hobbies">
-            <h2>Hobbies and Special Interests</h2>
-            <p>Sleeping and Watching TV shows :o</p>
+        <!-- Hobbies Section -->
+        <section>
+            <h2>My Favorite Hobby / Activity</h2>
+            <ul>
+                <li>Sleeping</li>
+                <li>Watching TV Shows - <a href="https://www.imdb.com/" target="_blank">Check out IMDb</a></li>
+            </ul>
         </section>
 
-        <section class="fun-fact">
+        <!-- Fun Fact Section -->
+        <section>
             <h2>Fun Fact</h2>
-            <p>I am terrified of cats</p>
+            <p>I am terrified of cats!</p>
         </section>
 
-	<section class="team-mates-webpage">
-    <h2>My Teammate's Personal Web Page</h2>
-    <p><a href="https://simplyarfan.github.io/me/" target="_blank">Visit Simply Arfan's Web Page</a></p>
-</section>
-	
+        <!-- Footer with Last Updated -->
+        <footer>
+            <p>Last Updated: January 27, 2025</p>
+        </footer>
     </div>
 </body>
 </html>
