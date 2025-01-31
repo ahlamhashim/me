@@ -17,12 +17,15 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding-bottom: 20px;
         }
-        header {
+        header, footer {
             background: #000; /* Black */
             color: #fff;
-            padding: 20px 0;
             text-align: center;
+            width: 100vw;
+            padding: 20px 0;
+            box-sizing: border-box;
         }
         header h1, header h2 {
             margin: 5px;
@@ -39,15 +42,8 @@
             margin-bottom: 15px;
             border-radius: 8px;
         }
-        footer {
-            text-align: center;
-            background: #000; /* Black */
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
         a {
-            color: #1E90FF; /* Lighter Blue for contrast */
+            color: #1E90FF; /* Lighter Blue */
             text-decoration: none;
         }
         a:hover {
@@ -60,19 +56,21 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <h1>Ahlam Hashim's Introduction Website</h1>
-            <h2>Preferred Name: Ahlam</h2>
-            <p>Email: <a href="mailto:g00093807@aus.edu">g00093807@aus.edu</a></p>
-            <p>Discord: al.fam._</p>
-        </header>
 
-        <!-- Profile Image Section -->
+    <!-- Header Section (Full Width) -->
+    <header>
+        <h1>Ahlam Hashim's Introduction Website</h1>
+        <h2>Preferred Name: Ahlam</h2>
+        <p>Email: <a href="mailto:g00093807@aus.edu">g00093807@aus.edu</a></p>
+        <p>Discord: al.fam._</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Profile Image -->
         <img src="me-800-by-800.jpg" alt="Ahlam's Headshot" class="profile-image" width="200" height="200" onclick="window.open('me-300-by-300.jpg', '_blank')">
 
-        <!-- Introduction Section -->
+        <!-- Introduction -->
         <section>
             <h2>Introduction</h2>
             <p>
@@ -82,43 +80,44 @@
             </p>
         </section>
 
-        <!-- What I Hope to Learn Section -->
+        <!-- What I Hope to Learn -->
         <section>
             <h2>What I Hope to Learn in this Course</h2>
             <ul>
-                <li>Software Development Life Cycle (SDLC) – Understanding different life cycle models and their impact on software projects.</li>
-                <li>Software Design and Specification – Learning design methodologies and how to write clear software specifications.</li>
-                <li>Implementation and Testing – Gaining hands-on experience in coding, debugging, and quality assurance.</li>
-                <li>Project Management and Development Tools – Exploring tools and techniques for efficient software development and teamwork.</li>
+                <li>Software Development Life Cycle (SDLC)</li>
+                <li>Software Design and Specification</li>
+                <li>Implementation and Testing</li>
+                <li>Project Management and Development Tools</li>
             </ul>
         </section>
 
-        <!-- My Favorite Hobby / Activity Section -->
+        <!-- My Favorite Hobby -->
         <section>
             <h2>My Favorite Hobby / Activity</h2>
             <ul>
                 <li>Sleeping</li>
                 <li>Watching TV Shows - <a href="https://www.imdb.com/title/tt14979052/" target="_blank">Happiness (Korean Drama) on IMDb</a></li>
-                <li>Trying out new food spots - My favorite place is <a href="https://www.moonslicepizza.com/" target="_blank">Moon Slice</a></li>
+                <li>Trying out new food spots - <a href="https://www.moonslicepizza.com/" target="_blank">Moon Slice</a></li>
             </ul>
         </section>
 
-        <!-- Fun Fact Section -->
+        <!-- Fun Fact -->
         <section>
             <h2>Fun Fact</h2>
             <p>I am absolutely terrified of cats, even though many people find them adorable!</p>
         </section>
 
-        <!-- My Team Mate's Website Section -->
+        <!-- My Team Mate's Website -->
         <section>
             <h2>My Team Mate's Website</h2>
             <p>Check out my team mate's website here: <a href="https://simplyarfan.github.io/me/" target="_blank">simplyarfan.github.io/me</a>.</p>
         </section>
-
-        <!-- Footer with Last Updated -->
-        <footer>
-            <p>Last Updated: January 27, 2025</p>
-        </footer>
     </div>
+
+    <!-- Footer Section (Full Width) -->
+    <footer>
+        <p>Last Updated: January 27, 2025</p>
+    </footer>
+
 </body>
 </html>
